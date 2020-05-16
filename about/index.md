@@ -1,9 +1,12 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
+title: About
+tags: [blog, about, impressum]
 date: 2016-03-21
-comments: true
+comments: false
 ---
 
-<center><a href="https://dreimark.com"><b>dreimark.com</b></a> is a minimalistic blog about information technology, gathered notes, code snippets and guides i don´t want to lose.</center>
+# What is this Site about?
+<a href="https://dreimark.com"><b>dreimark.com</b></a> is a minimalistic blog about information technology, gathered notes, code snippets and guides i don´t want to lose.
+
+# Impressum
