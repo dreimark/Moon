@@ -6,7 +6,7 @@ date: 2016-03-21
 comments: true
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center><a href="https://dreimark.com"><b>dreimark.com</b></a> is a minimalistic blog about information technology, gathered notes, code snippets and guides i don´t want to lose.</center>
 
 ## Features
 * Minimal, you can focus on your content
