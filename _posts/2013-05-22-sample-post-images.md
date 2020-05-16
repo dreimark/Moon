@@ -25,6 +25,7 @@ Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater u
 Apply the `half` class like so to display two images side by side that share the same caption.
 
 {% highlight html %}
+
 <figure class="half">
     <a href="/images/image-filename-1-large.jpg"><img src="/images/image-filename-1.jpg"></a>
     <a href="/images/image-filename-2-large.jpg"><img src="/images/image-filename-2.jpg"></a>
@@ -45,6 +46,7 @@ And you'll get something that looks like this:
 Apply the `third` class like so to display three images side by side that share the same caption.
 
 {% highlight html %}
+
 <figure class="third">
 	<img src="/images/image-filename-1.jpg">
 	<img src="/images/image-filename-2.jpg">
@@ -73,9 +75,9 @@ Here is the block you might want to use:
 {% highlight liquid %}
 {% raw %}
 {% capture images %}
-	http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png
-	http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png
-	http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png
+http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png
+http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png
+http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png
 {% endcapture %}
 {% include gallery images=images caption="Test images" cols=3 %}
 {% endraw %}
@@ -83,15 +85,15 @@ Here is the block you might want to use:
 
 Parameters:
 
-- `caption`: Sets the caption under the gallery (see `figcaption` HTML tag above);
-- `cols`: Sets the number of columns of the gallery.
-Available values: [1..3].
+-   `caption`: Sets the caption under the gallery (see `figcaption` HTML tag above);
+-   `cols`: Sets the number of columns of the gallery.
+    Available values: [1..3].
 
 It will look something like this:
 
 {% capture images %}
-	http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png
-	http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png
-	http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png
+http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png
+http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png
+http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png
 {% endcapture %}
 {% include gallery images=images caption="Test images" cols=3 %}

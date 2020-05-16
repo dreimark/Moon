@@ -5,8 +5,8 @@ title: "GitHub Hommage!"
 #image: ""
 date: 2020-05-14 11:30:00 +0100
 tags:
-  - github
-  - tech
+    - github
+    - tech
 description: "Why using GitHub may be really worth it."
 excerpt: "Reasons for using GitHub."
 # categories:

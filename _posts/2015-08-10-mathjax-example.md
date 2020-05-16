@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "MathJax Example"
-date:   2015-08-10
+title: "MathJax Example"
+date: 2015-08-10
 excerpt: "MathJax Example for Moon Jekyll Theme."
 tag:
-- markdown 
-- mathjax
-- example
-- test
-- jekyll
+    - markdown
+    - mathjax
+    - example
+    - test
+    - jekyll
 comments: true
 ---
 
@@ -18,21 +18,20 @@ comments: true
 
 To enable MathJax support be sure Kramdown is your Markdown flavor of choice and MathJax is set to true in your `_config.yml` file.
 
-~~~
+```
 markdown: kramdown
 mathjax: true
-~~~
+```
 
-~~~
-Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
+```
+Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering:
 \\[ \frac{1}{n^{2}} \\]
-~~~
+```
 
-Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
+Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering:
 \\[ \frac{1}{n^{2}} \\]
 
 The only thing to look out for is the escaping of the backslash when using markdown, so the delimiters become `\\[ ... \\]` and `\\( ... \\)` for inline and block maths respectively.
-    
 
 $$
 \begin{align*}
