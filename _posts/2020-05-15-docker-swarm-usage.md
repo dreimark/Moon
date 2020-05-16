@@ -4,7 +4,7 @@ title: "Docker Swarm Cheat Sheet"
 date: 2020-05-16 12:06:31
 tags: [tech, cli, cheatsheets, docker]
 description: "Basic Docker Swarm Commands"
-excerpt: "Docker Swarm Cheat Sheet"
+excerpt: "Using Docker Swarm"
 #image: ""
 categories:
     - cheatsheets
