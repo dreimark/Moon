@@ -8,6 +8,7 @@ tags:
   - github
   - tech
 description: "Why using GitHub may be really worth it."
+excerpt: "Reasons for using GitHub."
 # categories:
 #   - blog
 ---
