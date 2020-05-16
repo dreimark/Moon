@@ -7,5 +7,3 @@ comments: true
 ---
 
 <center><a href="https://dreimark.com"><b>dreimark.com</b></a> is a minimalistic blog about information technology, gathered notes, code snippets and guides i don´t want to lose.</center>
-
-[Install Moon](https://dreimark.com){: .btn}
