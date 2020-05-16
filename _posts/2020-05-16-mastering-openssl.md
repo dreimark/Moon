@@ -126,7 +126,7 @@ openssl rsa -in encrypted.key -out decrypted.key
 
 # Convert Certificate Formats
 
-A lot of different types of certificate are out there. Some possible conversion are described below.
+A lot of different types of certificate are out there. Some possible conversions are described below.
 
 ## Convert PEM to DER
 
