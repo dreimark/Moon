@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Docker Swarm Cheat Sheet"
-date: 2020-05-16 12:06:31
+date: 2020-05-16 16:12:31
 tags: [tech, cli, cheatsheets, docker]
 description: "Basic Docker Swarm Commands"
 excerpt: "Using Docker Swarm"
