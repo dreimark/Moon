@@ -5,7 +5,7 @@ date: 2020-05-16 19:30:31
 tags: [tech, cli, cheatsheets, openssl, certificate]
 description: "Mastering SSL certificates, private keys and CSR using openSSL."
 excerpt: "Guide for obtaining SSL certificates from a certificate authority"
-#image: ""
+image: "https://3.bp.blogspot.com/-sm1GeqR48WE/VZkSU_Yu97I/AAAAAAAAFSg/OVrc3zpXwNc/s1600/openssl.png"
 categories:
     - cheatsheets
 ---
