@@ -3,7 +3,7 @@ layout: post
 title:  "Moon Jekyll Theme"
 date:   2016-04-06
 excerpt: "Minimal, one column Jekyll theme for your blog."
-project: true
+series: true
 tag:
 - jekyll 
 - moon
@@ -115,8 +115,8 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
 - title: Blog
   url: /blog/
 
-- title: Projects
-  url: /projects/
+- title: Series
+  url: /series/
 
 - title: About
   url: /about/
