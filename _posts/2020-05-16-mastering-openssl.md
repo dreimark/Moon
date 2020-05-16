@@ -99,17 +99,24 @@ A lot of different types of certificate are out there. Some possible conversion 
 
 ## Convert PEM to DER
 ```bash
-openssl x509 -in domain.crt -outform der -out domain.der
+openssl x509 \
+       -in domain.crt \
+       -outform der -out domain.der
 ```
 
 ## Convert DER to PEM
 ```bash
-openssl x509 -inform der -in domain.der -out domain.crt
+openssl x509 \
+       -inform der -in domain.der \
+       -out domain.crt
 ```
 
 ## Convert PEM to PKCS7
 ```bash
-openssl pkcs12 -inkey domain.key -in domain.crt -export -out domain.pfx
+openssl crl2pkcs7 -nocrl \
+       -certfile domain.crt \
+       -certfile ca-chain.crt \
+       -out domain.p7b
 ```
 
 ## Convert PEM to PKCS12
@@ -128,5 +135,7 @@ openssl pkcs7 \
 
 ## Convert PKCS12 to PEM
 ```bash
-openssl pkcs12 -in domain.pfx -nodes -out domain.combined.crt
+openssl pkcs12 \
+       -in domain.pfx \
+       -nodes -out domain.combined.crt
 ```
