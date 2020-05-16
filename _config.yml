@@ -1,7 +1,7 @@
 # Site
-title:              dreimark.com
+title:              'dreimark.com'
 bio:                'blog, tech guides, code snippets and howto´s'
-description:        "minimalistic blog and my dump for code snippets and guides."
+description:        'minimalistic blog and my dump for code snippets and guides.'
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/dreimark-briefmarke.jpg'
