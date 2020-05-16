@@ -66,6 +66,12 @@ docker exec -ti pihole /bin/bash
 docker inspect [container-id]
 ```
 
+### scale swarm nodes
+
+```bash
+docker-compose scale node=5
+```
+
 ### mount volumes
 
 ```bash
