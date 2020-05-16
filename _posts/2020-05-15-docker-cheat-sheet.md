@@ -16,7 +16,7 @@ categories:
 
 ## managing containers
 
-Managing containers can be a hassle and quite time consuming without some easy tweaks. I also recommend assigning these commands to an alias in your ~/.bashrc making it available and convenient in your home environment and remote ssh shells.
+Managing containers can be a hassle and quite time consuming without some easy tweaks. I also recommend assigning these commands to an alias in your ~/.bashrc making it available and convenient in your home environment and remote shells.
 
 ### stop containers
 
