@@ -11,32 +11,33 @@ categories:
 ---
 
 ## About Certificate Signing Requests (CSRs)
-Obtaining an SSL certificate from a certificate authority (CA) requires to generate a certificate signing request (CSR). Provide information u might be prompted, especially the Common Name (CN) has to be correct and should be the Fully Qualified Domain Name (FQDN).
+Obtaining an SSL certificate from a certificate authority (CA) requires to create a certificate signing request (CSR). Provide information u might be prompted, especially the Common Name (CN) has to be correct and should be the Fully Qualified Domain Name (FQDN).
 
-# Generating CSRs
-## Generate a Private Key and a CSR
+# Creating Certificate Signing Requests
+## Create a Private Key and a CSR
 Use this method if you want to use HTTPS (HTTP over TLS). Create a new folder, dir into it and build a 2048-bit private key (domain.key) and a CSR (domain.csr):
 ```bash
 openssl req -newkey rsa:2048 -nodes -keyout domain.key -out domain.csr
 ```
 
-## Generate a CSR from an Existing Private Key
+## Create a CSR from an Existing Private key
+Use this method if you already have a private key.
 ```bash
 openssl x509 -in domain.crt -signkey domain.key -x509toreq -out domain.csr
 ```
-# Generating SSL Certificates
-## Generate a Self-Signed Certificate
+# Building SSL Certificates
+## Create a Self-Signed Certificate
 This is for use without a CA
 ```bash
 openssl req -newkey rsa:2048 -nodes -keyout domain.key -x509 -days 365 -out domain.crt
 ```
 
-## Generate a Self-Signed Certificate from an Existing Private Key
+## Create a Self-Signed Certificate from an Existing Private Key
 ```bash
 openssl req -key domain.key -new -x509 -days 365 -out domain.crt
 ```
 
-## Generate a Self-Signed Certificate from an Existing Private Key and CSR 
+## Create a Self-Signed Certificate from an Existing Private Key and CSR 
 ```bash
 openssl x509 -signkey domain.key -in domain.csr -req -days 365 -out domain.crt  openssl x509 -signkey domain.key -in domain.csr -req -days 365 -out domain.crt
 ```
