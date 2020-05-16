@@ -4,11 +4,7 @@ title: "Docker Cheat Sheet"
 #subtitle: ""
 #image: ""
 date: 2020-05-15 20:38:41
-tags:
-    - tech
-    - cli
-    - cheatsheets
-    - docker
+tags: [tech, cli, cheatsheets, docker]
 description: "Bread and butter docker commands and handy scripts"
 categories:
     - cheatsheets

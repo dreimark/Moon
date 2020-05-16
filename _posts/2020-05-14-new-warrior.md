@@ -4,9 +4,7 @@ title: "A new Warrior has entered the ring!"
 #subtitle: ""
 #image: ""
 date: 2020-05-14 10:00:00 +0100
-tags:
-    - launch
-    - hype
+tags: [launch, hype]
 description: "Launch Announcement"
 # categories:
 #   - blog
