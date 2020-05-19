@@ -5,7 +5,8 @@ title: "A new Warrior has entered the ring!"
 #image: ""
 date: 2020-05-14 10:00:00 +0100
 tags: [launch, hype]
-description: "Launch Announcement"
+description: "Site Launch Announcement"
+excerpt: "Site Launch Announcement"
 # categories:
 #   - blog
 ---
