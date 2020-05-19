@@ -129,7 +129,7 @@ openssl genrsa \
 
 ## Verify a Private Key
 
-Check private key validity
+Check private key validity.
 
 ```bash
 openssl rsa \
