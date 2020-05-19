@@ -92,7 +92,7 @@ openssl x509 \
 
 Use the following 2 Commands for human readable content of PEM-encoded files:
 
-## Show Signing Requests
+## Show Signing Request
 
 ```bash
 openssl req \
@@ -102,7 +102,7 @@ openssl req \
        -in domain.csr
 ```
 
-## Show Certificates
+## Show Certificate
 
 ```bash
 openssl x509 \
