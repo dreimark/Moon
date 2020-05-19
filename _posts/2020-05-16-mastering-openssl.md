@@ -44,7 +44,7 @@ openssl x509 \
 
 ## Create a Self-Signed Certificate
 
-This is for use without a CA
+This is for use without a CA.
 
 ```bash
 openssl req \
