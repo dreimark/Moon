@@ -14,8 +14,6 @@ comments: false
 
 I support Free Software and encourage everybody to share and care!
 
-<iframe width="560" height="315" src="//audio-video.gnu.org/video/TEDxGE2014_Stallman05_LQ.webm" frameborder="0"> </iframe>
-
 # Impressum
 
 mh@dreimark.com
