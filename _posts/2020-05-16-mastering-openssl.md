@@ -10,11 +10,11 @@ categories:
     - cheatsheets
 ---
 
+# Creating Certificate Signing Requests
+
 ## About Certificate Signing Requests
 
 Obtaining an SSL certificate from a certificate authority (CA) requires to create a certificate signing request (CSR). Provide information u might be prompted, especially the Common Name (CN) has to be correct and should be the Fully Qualified Domain Name (FQDN).
-
-# Creating Certificate Signing Requests
 
 ## Create a Private Key and a CSR
 
