@@ -21,7 +21,11 @@ Obtaining an SSL certificate from a certificate authority (CA) requires to creat
 Use this method if you want to use HTTPS (HTTP over TLS). Create a new folder, dir into it and build a 2048-bit private key (domain.key) and a CSR (domain.csr):
 
 ```bash
-openssl req -newkey rsa:2048 -nodes -keyout domain.key -out domain.csr
+openssl req \
+       -newkey rsa:2048 \
+       -nodes \
+       -keyout domain.key \
+       -out domain.csr
 ```
 
 ## Create a CSR from an existing Private key
@@ -29,7 +33,11 @@ openssl req -newkey rsa:2048 -nodes -keyout domain.key -out domain.csr
 Use this method if you already have a private key.
 
 ```bash
-openssl x509 -in domain.crt -signkey domain.key -x509toreq -out domain.csr
+openssl x509 \
+       -in domain.crt \
+       -signkey domain.key \
+       -x509toreq \
+       -out domain.csr
 ```
 
 # Building SSL Certificates
@@ -39,7 +47,13 @@ openssl x509 -in domain.crt -signkey domain.key -x509toreq -out domain.csr
 This is for use without a CA
 
 ```bash
-openssl req -newkey rsa:2048 -nodes -keyout domain.key -x509 -days 365 -out domain.crt
+openssl req \
+       -newkey rsa:2048 \
+       -nodes \
+       -keyout domain.key \
+       -x509 \
+       -days 365 \
+       -out domain.crt
 ```
 
 ## Create a Self-Signed Certificate from an existing Private Key
@@ -47,7 +61,12 @@ openssl req -newkey rsa:2048 -nodes -keyout domain.key -x509 -days 365 -out doma
 Use this method if you already have a private key.
 
 ```bash
-openssl req -key domain.key -new -x509 -days 365 -out domain.crt
+openssl req \
+       -key domain.key \
+       -new \
+       -x509 \
+       -days 365 \
+       -out domain.crt
 ```
 
 ## Create a Self-Signed Certificate from an Existing Private Key and CSR
@@ -55,7 +74,18 @@ openssl req -key domain.key -new -x509 -days 365 -out domain.crt
 This is for use without a CA.
 
 ```bash
-openssl x509 -signkey domain.key -in domain.csr -req -days 365 -out domain.crt  openssl x509 -signkey domain.key -in domain.csr -req -days 365 -out domain.crt
+openssl x509 \
+       -signkey domain.key \
+       -in domain.csr \
+       -req \
+       -days 365 \
+       -out domain.crt \
+       openssl x509 \
+       -signkey domain.key \
+       -in domain.csr \
+       -req \
+       -days 365 \
+       -out domain.crt
 ```
 
 # Inspect Certificates
@@ -65,19 +95,28 @@ Use the following 2 Commands for human readable content of PEM-encoded files:
 ## Show Signing Requests
 
 ```bash
-openssl req -text -noout -verify -in domain.csr
+openssl req \
+       -text \
+       -noout \
+       -verify \
+       -in domain.csr
 ```
 
 ## Show Certificates
 
 ```bash
-openssl x509 -text -noout -in domain.crt
+openssl x509 \
+       -text \
+       -noout \
+       -in domain.crt
 ```
 
 ## Verify a Certificate was Signed by a CA
 
 ```bash
-openssl verify -verbose -CAFile ca.crt domain.crt
+openssl verify \
+       -verbose \
+       -CAFile ca.crt domain.crt
 ```
 
 # Private Keys
@@ -89,7 +128,9 @@ Building and verifying private keys.
 Generate 2048-bit private key:
 
 ```bash
-openssl genrsa -des3 -out domain.key 2048
+openssl genrsa \
+       -des3 \
+       -out domain.key 2048
 ```
 
 ## Verify a Private Key
@@ -97,7 +138,9 @@ openssl genrsa -des3 -out domain.key 2048
 Check private key validity
 
 ```bash
-openssl rsa -check -in domain.key
+openssl rsa \
+       -check \
+       -in domain.key
 ```
 
 ## Verify a Private Key Matches a Certificate and CSR
@@ -105,7 +148,10 @@ openssl rsa -check -in domain.key
 Always double check.
 
 ```bash
-openssl rsa -noout -modulus -in domain.key | openssl md5 openssl x509 -noout -modulus -in domain.crt | openssl md5 openssl req -noout -modulus -in domain.csr | openssl md5
+openssl rsa \
+       -noout \
+       -modulus \
+       -in domain.key | openssl md5 openssl x509 -noout -modulus -in domain.crt | openssl md5 openssl req -noout -modulus -in domain.csr | openssl md5
 ```
 
 ## Encrypt a Private Key
@@ -113,7 +159,10 @@ openssl rsa -noout -modulus -in domain.key | openssl md5 openssl x509 -noout -mo
 Set a password for encrypting the private key:
 
 ```bash
-openssl rsa -des3 -in unencrypted.key -out encrypted.key
+openssl rsa \
+       -des3 \
+       -in unencrypted.key \
+       -out encrypted.key
 ```
 
 ## Decrypt a Private Key
@@ -121,7 +170,9 @@ openssl rsa -des3 -in unencrypted.key -out encrypted.key
 Provide credentials for the encrypted key when prompted.
 
 ```bash
-openssl rsa -in encrypted.key -out decrypted.key
+openssl rsa \
+       -in encrypted.key \
+       -out decrypted.key
 ```
 
 # Convert Certificate Formats
