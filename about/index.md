@@ -12,7 +12,7 @@ comments: false
 
 # Free Software
 
-I support Free Software and encourage everybody to share and care!
+I support free software and encourage everybody to share and care!
 
 # Impressum
 
