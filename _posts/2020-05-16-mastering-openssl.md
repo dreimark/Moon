@@ -145,7 +145,16 @@ Always double check.
 openssl rsa \
        -noout \
        -modulus \
-       -in domain.key | openssl md5 openssl x509 -noout -modulus -in domain.crt | openssl md5 openssl req -noout -modulus -in domain.csr | openssl md5
+       -in domain.key \
+       | openssl md5 openssl x509 \
+       -noout \
+       -modulus \
+       -in domain.crt \
+       | openssl md5 openssl req \
+       -noout \
+       -modulus \
+       -in domain.csr \
+       | openssl md5
 ```
 
 ## Encrypt a Private Key
